@@ -46,9 +46,9 @@ console.log(Array.from("joy"))
 console.log(Array.from(Object.values({ name: "joy" })));
 console.log(Array.from(Object.entries({ name: "joy" })));
 
-const i=68686;
-const j="gjfj"
-const k="dog"
-const l={aw:12,zdf:565,jkkh:67,hjgh:"ghgj"}
+// const i=68686;
+// const j="gjfj"
+// const k="dog"
+// const l={aw:12,zdf:565,jkkh:67,hjgh:"ghgj"}
 
-console.log(Array.of(i,j,k,l))
+// console.log(Array.of(i,j,k,l))
