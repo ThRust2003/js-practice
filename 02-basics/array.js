@@ -50,4 +50,5 @@ const i=68686;
 const j="gjfj"
 const k="dog"
 const l={aw:12,zdf:565,jkkh:67,hjgh:"ghgj"}
+
 console.log(Array.of(i,j,k,l))
