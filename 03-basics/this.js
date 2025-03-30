@@ -12,7 +12,8 @@
   user.welcomemessage()
   user.username="rohan Yadav"
   user.welcomemessage()
-//   this inside an object method always refers to the current state of the object at the time the method is called.
+  console.log(this)//this here refers to empty object which is empty here in  browser the global object is window
+  // // //   this inside an object method always refers to the current state of the object at the time the method is called.
 //   Local Scope (Inside the function)
 
 //   It first checks if username is defined inside welcomemessage.
