@@ -16,8 +16,14 @@ function one(){
     //console.log(website)
     two()
 }
+
+
+//hoisting
 one()
-addone(8);//this would nt generate an errorv 
+addone(8);//this wouldnt generate an errorv due to hoisting hoisting move the definition to top var also support hoisting
+          // 🔹 var Hoisting Behavior:
+          // When you declare a variable with var, only the declaration is hoisted, not the assignment:
+          //➡️ Function declarations are fully hoisted, meaning both the function name and body are moved to the top.
 function addone(num){
     return num+1;
 }
