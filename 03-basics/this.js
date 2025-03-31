@@ -13,6 +13,7 @@
   user.username="rohan Yadav"
   user.welcomemessage()
   console.log(this)//this here refers to empty object which is empty here in  browser the global object is window
+  
   // // //   this inside an object method always refers to the current state of the object at the time the method is called.
 //   Local Scope (Inside the function)
 
@@ -31,3 +32,11 @@
 //   If JavaScript doesn't find username inside welcomemessage, it checks the global scope.
   
 //   Since username is not declared globally, it throws:
+console.log(this)
+function roy(){
+  console.log(this)
+}
+roy()
+// In Node.js global scope, this does not refer to the global object (global) but to module.exports, which is {}.
+
+// Inside a regular function, this refers to global
