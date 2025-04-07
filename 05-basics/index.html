@@ -5,12 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 </head>
-<body>
-    <h1>
-        Dom LEARNING on chai AUR code 
-    </h1>
-    <p>
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatem optio laboriosam doloribus nostrum ea odio quisquam facere quasi dolore, rem explicabo consequatur expedita non, harum error sunt eos sequi.
-    </p>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">TuesDay</div>
+        <div class="day">WednesDay</div>
+        <div class="day">ThursDay</div>
+    </div>
+   
 </body>
-</html>
+<script>
+    const div =document.createElement('div')
+    div.id=Math.random
+    div.className="loki"
+    div.setAttribute('title','generated title')
+    div.style.backgroundColor='green'
+    div.textContent = 'chai aur code'; // or innerText / innerHTML
+
+  // const add =document.createTextNode("chai aur code")
+  // div.appendChild(add)
+  
+  document.body.appendChild(div)
+    //    const a= document.querySelector('.parent');//it returns html collection
+//    [...a.children].forEach((b)=>{
+//       b.style.color='red'; 
+//    })
+//    const day1=document.querySelector('.day')
+//    console.log(day1.parentElement)
+//    console.log(day1.nextElementSibling)
+//    console.log(a.childNodes)
+   
+   
+//    console.log(a.children[1].innerHTML )
+//    console.log(a.children)
+//    console.log(a.firstElementChild)
+
+</script>
+ </html>
+ <!--
+You cannot use forEach directly on an HTMLCollection:
+// This will throw an error
+document.getElementsByClassName("my-class").forEach(el => {
+  el.style.color = "blue";
+});
+But you can convert it to an array first:
+let elements = Array.from(document.getElementsByClassName("my-class"));
+
+elements.forEach(el => {
+  el.style.color = "blue";
+});
+Or:
+[...document.getElementsByClassName("my-class")].forEach(el => {
+  el.style.color = "blue";
+}); -->
